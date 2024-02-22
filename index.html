@@ -10,66 +10,345 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <style>
-        img {
-            display: block;
-            margin-bottom: 20px;
-            /* Để tạo khoảng cách giữa các ảnh */
-            width: 100%;
-            /* Đảm bảo ảnh điền vào toàn bộ chiều rộng của phần tử chứa */
-            max-width: 500px;
-            /* Giới hạn chiều rộng tối đa của ảnh */
-            height: auto;
-            /* Đảm bảo tỷ lệ khung hình tự động được duy trì */
-        }
-
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            /* Khoảng cách giữa các ảnh */
-        }
-
-        .image-grid img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        h2 {
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <h2>Chọn 1 bức ảnh để xem người yêu tương lai của bạn là ai</h2>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="khanhly.html">Khánh Ly</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="khanhly.html" aria-current="page">Khánh Ly
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Tài Khoản</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Liên hệ Facebook</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="https://www.facebook.com/tien.hoanganh.169/">Tien Hoang Anh</a>
+                                <a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100081260503195">Khánh Ly</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main class="image-grid">
-        <a href="https://www.facebook.com/tien.hoanganh.169/"><img
-                src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/416081922_376956641689683_474701891932778755_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFjAOj3bpFGrK0aBWNtRYyZGMtY68iN0uIYy1jryI3S4oMnFOwmHClRh77wyNJ0m9rW6gwLQADMLDaan_qKSmat&_nc_ohc=8cPjThYyk6YAX8OuMa6&_nc_ht=scontent.fhan2-3.fna&oh=00_AfBMQNKBJ-J56uRIZlIUhkTj_CgjbtFXoyIdbqaAmM4q6Q&oe=65DD4946"
-                alt=""></a>
-        <a href="https://www.facebook.com/tien.hoanganh.169/"><img
-                src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/416091942_376956585023022_1516070410109618103_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE46xpOSiaPc0HPLJgi5t_W_yei4Qjk1KL_J6LhCOTUopjVD0tPMsTN5zLbLoxWuT2-ecbL3Xy082CmvK0uKX0P&_nc_ohc=JyX4cgj4pRwAX-RxasL&_nc_ht=scontent.fhan2-4.fna&oh=00_AfDpQUiR4MbLYo9njSSy-Z_sxlMiFYKD-P0QFZvhblYpRg&oe=65DD0CA5"
-                alt=""></a>
-        <a href="https://www.facebook.com/tien.hoanganh.169/"><img
-                src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/416094188_376956558356358_3125229219056701601_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeEF_Xe96VBkU4TJqFU_rSXBd9cvw8RJWJh31y_DxElYmEveiVExJ-_u_gF1dqGHmNF6t-3OjWSYRkVkdGoc8_Gn&_nc_ohc=yxhQH14x-BoAX_6beuO&_nc_ht=scontent.fhan2-3.fna&oh=00_AfC1LpEQUKwNJZBP_fM3sqRFySxX6O-vCiV8C_ItjNK0NQ&oe=65DC0E6A"
-                alt=""></a>
-        <a href="https://www.facebook.com/tien.hoanganh.169/"><img
-                src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/416086630_376956515023029_7144604087457919010_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFL3nlQC3_58Jr97-oXrtoGKcbAtsi0ACIpxsC2yLQAIo8X5BftC5FoWAJtde1jTmQiwAv9YBQ74ULn5ty_w2YE&_nc_ohc=8oTe1FNrdCMAX80zlWx&_nc_ht=scontent.fhan2-3.fna&oh=00_AfAMP4t9HZr-kklJKUVTKIGzQkSn8rgARlhiU76HDZjNBw&oe=65DC0611"
-                alt=""></a>
-        <a href="https://www.facebook.com/tien.hoanganh.169/"><img
-                src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/416095495_376956461689701_2973011018848302628_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE2ndygIbFX78sBw_1T3GjHRmr4purZ_ttGavim6tn-20i3Wh1MKDZ6muCtL8-DJzxyrFwI1DNlQsDQM69Hj13j&_nc_ohc=AHiFujiaIOcAX_DeIA-&_nc_ht=scontent.fhan2-3.fna&oh=00_AfBF5btLaoV94Wjz4QOgfBGJeZKX2bu8gsjOW5PjecC9sA&oe=65DBFD02"
-                alt=""></a>
-        <a href="https://www.facebook.com/tien.hoanganh.169/"><img
-                src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/416067822_376956401689707_8734065692543067266_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFJOEt2tryjkPUm2mPfm4Fget--IG7A1cN6374gbsDVwyxtSY8Acke3d915Qvd82e6Jg43KeZt-wkHSfLmFH2nt&_nc_ohc=D3XDTJp9DoEAX9S1BLJ&_nc_oc=AQkfZCaSHgOxfs9tLRlkpp-ipwQadxNfFwywogzOhoaFzqCxYXaattRuo6JtgA_GGrs&_nc_ht=scontent.fhan2-3.fna&oh=00_AfA9Or2Jg5wWIAazvmKBLfARNR6n-1R22D9nCCY1_A7C5Q&oe=65DC87A6"
-                alt=""></a>
+    <main>
+        <div class="container-fluid tm-container-content tm-mt-60">
+            <div class="row mb-4">
+                <h2 class="col-6 tm-text-primary">Khánh Ly
+                </h2>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <form action="" class="tm-text-primary">
+                        Page <input type="text" value="1" size="1" class="tm-input-paging tm-text-primary"> of <input
+                            type="text" value="10" size="1" class="tm-input-paging tm-text-primary">
+                    </form>
+                </div>
+            </div>
 
+            <div class="row tm-mb-90 tm-gallery">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-03.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2023</span>
+                        <span>9,906 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-04.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2023</span>
+                        <span>16,100 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-05.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2023</span>
+                        <span>12,460 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-06.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2022</span>
+                        <span>11,402 views</span>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-07.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2022</span>
+                        <span>16,008 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src="img-08.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2022</span>
+                        <span>12,860 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-09.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2021</span>
+                        <span>10,900 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-10.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2022</span>
+                        <span>11,300 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-11.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2022</span>
+                        <span>42,700 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-12.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2020</span>
+                        <span>11,402 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-13.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2020</span>
+                        <span>32,906 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-14.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2020</span>
+                        <span>50,700 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-15.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2019</span>
+                        <span>107,510 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-16.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2019</span>
+                        <span>118,006 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-17.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2019</span>
+                        <span>121,300 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-18.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2018</span>
+                        <span>21,204 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-19.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2022</span>
+                        <span>11,300 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-20.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2022</span>
+                        <span>42,700 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-21.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2020</span>
+                        <span>11,402 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-22.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2020</span>
+                        <span>32,906 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-23.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2020</span>
+                        <span>50,700 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-24.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2019</span>
+                        <span>107,510 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-25.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2019</span>
+                        <span>118,006 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-26.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2019</span>
+                        <span>121,300 views</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                    <figure class="effect-ming tm-video-item">
+                        <img src=" img-27.jpg" alt="Image" class="img-fluid">
+                        <figcaption class="d-flex align-items-center justify-content-center">
+                        </figcaption>
+                    </figure>
+                    <div class="d-flex justify-content-between tm-text-gray">
+                        <span class="tm-text-gray-light">12 Sep 2018</span>
+                        <span>21,204 views</span>
+                    </div>
+                </div>
+                <!-- hết iphone -->
+            </div> <!-- row -->
+        </div> <!-- container-fluid, tm-container-content -->
     </main>
-    <footer>
-        <!-- place footer here -->
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05); text-decoration: none;">
+            © 2024 Copyright:
+            <a class="text-body" href="https://web.facebook.com/tien.hoanganh.169">Tine Hoang Anh</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
