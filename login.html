@@ -1,90 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Khánh Ly</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
-    <header class="header">
-        <section class="flex">
-            <a class="logo" href="index.html">Tine<span>images</span></a>
-        </section>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="khanhly.html">Khánh Ly</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="khanhly.html" aria-current="page">Khánh Ly
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Tài Khoản</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Liên hệ facebook</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="https://www.facebook.com/tien.hoanganh.169/">Tien Hoang Anh</a>
+                                <a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100081260503195">Khánh Ly</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
     </header>
 
-    <div class="container">
-        <h2>Đăng Nhập</h2>
-        <form method="POST" action="login.php">
-            <label for="username">Tên đăng nhập:</label>
-            <input type="varchar" name="username" id="username" required>
-            <label for="password">Mật khẩu:</label>
-            <input type="varchar" name="password" id="password" required>
-            <input type="number" name="type_id" value="0" hidden>
-            <a href="signup.php">Đăng ký tài khoản</a><br>
-            <input type="submit" value="Đăng Nhập">
-        </form>
-    </div>
+    <section class="vh-80 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+
+                            <div class="mb-md-5 mt-md-4 pb-5">
+                                <div id="loginForm">
+
+                                    <h2 class="fw-bold mb-2 text-uppercase">Đăng Nhập</h2>
+                                    <p class="text-white-50 mb-5">Vui lòng đăng nhập để thực hiện mua hàng</p>
+
+                                    <div class="form-outline form-white mb-4">
+                                        <p>Tên đăng nhập: </p>
+                                        <input type="email" id="username" name="username"
+                                            class="form-control form-control-lg" />
+                                    </div>
+                                    <div class="form-outline form-white mb-4">
+                                        <p>Mật khẩu: </p>
+                                        <input type="password" id="password" name="password"
+                                            class="form-control form-control-lg" />
+                                    </div>
+                                </div>
+                                <p id="loginMessage"></p>
+
+                                <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Quên Mật Khẩu?</a>
+                                </p>
+                                <button class="btn btn-outline-light btn-lg px-5" onclick="checkLogin()">Đăng
+                                    Nhập</button>
+
+                                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                                    <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                                    <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="mb-0">Bạn chưa có tài khoản? <a href="#!" class="text-white-50 fw-bold">Đăng
+                                        Ký</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05); text-decoration: none;">
+            © 2024 Copyright:
+            <a class="text-body" href="https://web.facebook.com/tien.hoanganh.169">Tine Hoang Anh</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="js/plugins.js"></script>
+    <script>
+        function checkLogin() {
+            // Lấy giá trị nhập từ người dùng
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Tài khoản mẫu (có thể thay đổi theo nhu cầu của bạn)
+            var sampleUsername = "khanhly";
+            var samplePassword = "31032004";
+
+            // Kiểm tra xem thông tin đăng nhập có khớp không
+            if (username === sampleUsername && password === samplePassword) {
+                document.getElementById('loginMessage').innerHTML = "Login successful!";
+                // Redirect to another page if login is successful
+                window.location.href = "khanhly.html";
+            } else {
+                document.getElementById('loginMessage').innerHTML = "Invalid username or password. Please try again.";
+            }
+        }
+    </script>
 </body>
-
-</html>
-
-<style>
-body {
-    font-family: cursive, Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="varchar"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-}
-
-input[type="submit"] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-</style>
